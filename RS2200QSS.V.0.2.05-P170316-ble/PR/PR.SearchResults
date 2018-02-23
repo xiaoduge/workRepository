@@ -1,0 +1,6 @@
+---- TOC_MEAS_PERIOD 匹配 (5 在 1 文件 ) ----
+Display.c (e:\project\程序发布版本\purist发布版本20160811\rs2200qss.v.0.2.05-p170316-ble\source\app):#define TOC_MEAS_PERIOD (100)
+Display.c (e:\project\程序发布版本\purist发布版本20160811\rs2200qss.v.0.2.05-p170316-ble\source\app)://#define TOC_MEAS_PERIOD ((Display.cfg.cfg3.usTocWashTime+Display.cfg.cfg3.usTocOxiTime)*1000)
+Display.c (e:\project\程序发布版本\purist发布版本20160811\rs2200qss.v.0.2.05-p170316-ble\source\app):            aAdcChl[ucPoolIdx].iValue = TOC_MEAS_PERIOD;
+Display.c (e:\project\程序发布版本\purist发布版本20160811\rs2200qss.v.0.2.05-p170316-ble\source\app):    //sys_timeout(100,SYS_TIMER_PERIOD,TOC_MEAS_PERIOD,Disp_toc_fast_meas_cb,&Display,&Display.to4TOCMeas);
+Display.c (e:\project\程序发布版本\purist发布版本20160811\rs2200qss.v.0.2.05-p170316-ble\source\app):    sys_timeout(TOC_DELAY_SAMPLE,SYS_TIMER_PERIOD,TOC_MEAS_PERIOD,Disp_toc_fast_meas_cb,&Display,&Display.to4TOCMeas);    
