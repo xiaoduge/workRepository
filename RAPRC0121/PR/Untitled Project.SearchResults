@@ -1,0 +1,38 @@
+---- Value_PJST 匹配 (43 in 1 文件) ----
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):signed char Value_PJST;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):  Value_PJST = RAM_24LC01B;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):      //if ((Value_PJST > 59) || (Value_PJST < 1))
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):      if ((Value_PJST > 59) || (Value_PJST < 0)) //20160711
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):        Value_PJST = 3;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):      if ((Value_PJST > 23) || (Value_PJST < 1))
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):        Value_PJST = 1;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):      if ((Value_PJST > 99) || (Value_PJST < 1))
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):        Value_PJST = 1;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):          Value_PJST = Value_PJST + pow(10, 2 - BitNo);
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):              if (Value_PJST > 59)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                Value_PJST = 1;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):              if (Value_PJST > 23)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                Value_PJST = 1;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):              if (Value_PJST > 99)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                Value_PJST = 99;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):            Value_PJST = Value_PJST - pow(10, 2 - BitNo);
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                if (Value_PJST < 0)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                  Value_PJST = 0;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                if (Value_PJST < 1)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                  Value_PJST = 59;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                if (Value_PJST < 1)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                  Value_PJST = 23;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                Operate_24LC01B(_24LC01_Write, Address_PJST, Value_PJST);
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):      Read_GB2312_6X12_GT21L16S2W(0x30 + (Value_PJST % 100) / 10);
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):      Read_GB2312_6X12_GT21L16S2W(0x30 + (Value_PJST % 10) / 1);
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):      Read_GB2312_11X12_GT21L16S2W(0xA3B0 + (Value_PJST % 100) / 10);
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):      Read_GB2312_11X12_GT21L16S2W(0xA3B0 + (Value_PJST % 10) / 1);
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):            if (PJST_Timer / (Value_PJST * 60 * 60 * 24) % 2 == 0)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):            if (PJST_Timer / (Value_PJST * 60 * 60 * 24) >= 2)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):              PJST_Timer = PJST_Timer - Value_PJST * 60 * 60 * 24 * 2;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):              if (PJST_Timer / (Value_PJST * 60 * 60) % 2 == 0)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):              if (PJST_Timer / (Value_PJST * 60 * 60) >= 2)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                PJST_Timer = PJST_Timer - Value_PJST * 60 * 60 * 2;
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                if (PJST_Timer / (Value_PJST * 60) % 2 == 0)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                if (PJST_Timer / (Value_PJST * 60) >= 2)
+APP_WDC.c (e:\project\程序发布版本\纯水分配器程序发布版本2016.4.15\raprc0121.v.0.1.3\user):                  PJST_Timer = PJST_Timer - Value_PJST * 60 * 2;
